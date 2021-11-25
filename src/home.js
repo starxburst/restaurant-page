@@ -4,8 +4,6 @@ const addressCardDescription = 'International Commerce Centre, 1 Austin Road Wes
     + 'Phone:\n'
     + '+85222632263\n'
     + 'Email:\n'
-    + 'starxburst@gmail.com\n'
-    + 'Email:\n'
     + 'starxburst@gmail.com\n';
 
 const hoursCardDescription = 'Monday:\n'
