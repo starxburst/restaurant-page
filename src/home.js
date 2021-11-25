@@ -1,18 +1,18 @@
 const restaurantDescription = 'Taste around town in November with a whole month of indulgences and the trendiest tasting experiences. Meet masters of wines in our on-air programmes with special tasting kits delivered to your door and embark on a new self-guided wine tasting journey with our e-pass. Let your taste buds wander as you soak up the glamour of restaurant celebrations in this Culinary Capital of Asia! There’s so much more to check out.';
-const addressCard =
-    {
-     'address': 'International Commerce Centre, 1 Austin Road West',
-     'phone': '+85222632263',
-     'email': 'starxburst@gmail.com'
-    };
-
-const testz = '       4930 Ross St.\n'
-    + 'Red Deer, AB T4N 1X7\n'
+const addressCardDescription = 'International Commerce Centre, 1 Austin Road West\n'
     + '\n'
-    + '            Phone:\n'
-    + '      403-392-3046\n'
-    + '            Email:\n'
-    + 'eat@tribeflatout.com\n';
+    + 'Phone:\n'
+    + '+85222632263\n'
+    + 'Email:\n'
+    + 'starxburst@gmail.com\n'
+    + 'Email:\n'
+    + 'starxburst@gmail.com\n';
+
+const hoursCardDescription = 'Monday:\n'
+    + '11:00 a.m. - 11:45 p.m.\n'
+    + '\n'
+    + 'Wed,Thurs,Fri,Sat,Sun:\n'
+    + '10:00 a.m. - 01:00 a.m.\n';
 
 function createImage() {
     const imageCointainer = document.createElement('div');
@@ -38,31 +38,51 @@ function createAddressCard() {
     const h2 = document.createElement('pre');
 
     h1.textContent = '-Address-';
-    h2.textContent = testz;
+    h2.textContent = addressCardDescription;
+    h2.classList.add('card-description');
+    card.classList.add('information-card');
 
     card.appendChild(h1);
     card.appendChild(h2);
-    console.log(`Hello`);
+
+    return card;
+}
+
+function createHoursCard() {
+    const card = document.createElement('div');
+    const h1 = document.createElement('h1');
+    const h2 = document.createElement('pre');
+
+    h1.textContent = '-Hours-';
+    h2.textContent = hoursCardDescription;
+    h2.classList.add('card-description');
+    card.classList.add('information-card');
+
+    card.appendChild(h1);
+    card.appendChild(h2);
 
     return card;
 }
 
 function createInformationCard() {
-    const cardCointainer = document.createElement('div');
+    const cardContainer = document.createElement('div');
 
     let addressCard = createAddressCard();
-    cardCointainer.appendChild(addressCard);
+    let hoursCard = createHoursCard();
+    cardContainer.classList.add('information-card-container');
+    cardContainer.appendChild(addressCard);
+    cardContainer.appendChild(hoursCard);
 
-    return cardCointainer;
+    return cardContainer;
 }
 
 function createHome() {
-    const cointainer = document.getElementById('cointainer');
+    const container = document.getElementById('container');
     const image = createImage();
     const card = createInformationCard();
 
-    cointainer.appendChild(image);
-    cointainer.appendChild(card);
+    container.appendChild(image);
+    container.appendChild(card);
 }
 
 export default createHome;

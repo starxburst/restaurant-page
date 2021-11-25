@@ -7,7 +7,7 @@ createTabgroup();
 const container = document.createElement('div');
 const content = document.getElementById('content');
 
-container.setAttribute('id', 'cointainer');
+container.setAttribute('id', 'container');
 content.appendChild(container);
 
 createHome();
