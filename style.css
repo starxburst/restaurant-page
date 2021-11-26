@@ -51,6 +51,7 @@ html {
 
 .centered {
     font-family: 'Estonia', cursive;
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,6 +70,7 @@ html {
     color: blanchedalmond;
     text-align: center;
     margin: 0 5% 0 5%;
+    font-weight: bold;
 }
 
 .information-card-container {
