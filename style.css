@@ -50,7 +50,7 @@ html {
 
 
 .centered {
-    font-family: cursive;
+    font-family: 'Estonia', cursive;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,7 +79,7 @@ html {
 }
 
 pre {
-    font-family: cursive;
+    font-family: 'Estonia', cursive;
 }
 
 @media only screen and (max-width: 600px) {
