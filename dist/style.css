@@ -113,7 +113,7 @@ pre {
 }
 
 .food-image {
-    width: 20vw;
+    width: 100%;
 }
 
 .food-card {
@@ -165,5 +165,8 @@ hr.fancy-line, hr.fancy-line:before {
     #menu-image1 {
         height: 75vh;
         width: auto;
+    }
+    .food-card {
+        width: 75vw;
     }
 }
