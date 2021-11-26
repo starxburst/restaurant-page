@@ -5,6 +5,11 @@ html {
     flex-direction: column;
 }
 
+body {
+    margin:0px;
+    padding:0px;
+}
+
 /* ----------Tab---------- */
 .tab-button {
     background-color: transparent;
