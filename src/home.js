@@ -21,7 +21,7 @@ function createImage() {
     img.setAttribute('src', './img/home1.jpg');
     img.setAttribute('id', 'home-image1');
 
-    imageCointainer.classList.add('image-cointainer');
+    imageCointainer.classList.add('image-container');
     div.classList.add('centered');
 
     imageCointainer.appendChild(img);
@@ -74,7 +74,7 @@ function createInformationCard() {
     return cardContainer;
 }
 
-function createHome() {
+function createHomePage() {
     const container = document.getElementById('container');
     const image = createImage();
     const card = createInformationCard();
@@ -83,4 +83,4 @@ function createHome() {
     container.appendChild(card);
 }
 
-export default createHome;
+export default createHomePage;

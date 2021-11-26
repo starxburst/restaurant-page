@@ -5,7 +5,7 @@ html {
     flex-direction: column;
 }
 
-/* Tab */
+/* ----------Tab---------- */
 .tab-button {
     background-color: transparent;
     border: transparent;
@@ -30,20 +30,30 @@ html {
     z-index: 2;
 }
 
-/* Home */
-.image-cointainer {
+/* ----------Home---------- */
+.image-container {
     position: relative;
     overflow: hidden;
     text-align: center;
     color: white;
     z-index: 1;
+    margin-top: 2%;
 }
 
-/*
+
 #home-image1 {
-    min-width: 30vw;
+    width: 50%;
+    height: auto;
+    opacity: 0.4;
+    border-bottom: 5px solid red;
 }
-*/
+
+@media only screen and (max-width: 600px) {
+    #home-image1 {
+        width: 100%;
+    }
+}
+
 
 .centered {
     font-family: cursive;
@@ -52,13 +62,8 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 2.5em;
-    font-size: 2em;
+    font-size: 2rem;
     color: blanchedalmond;
-}
-
-#home-image1 {
-    opacity: 0.4;
-    border-bottom: 5px solid red;
 }
 
 .card-description {
@@ -75,8 +80,23 @@ html {
     display: flex;
     flex-direction: row;
     justify-content:center;
+    flex-wrap: wrap;
 }
 
 pre {
     font-family: cursive;
+}
+
+/* ----------Menu---------- */
+#menu-image1 {
+    width: 50%;
+    height: auto;
+    opacity: 0.4;
+    border-bottom: 5px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+    #menu-image1 {
+        width: 100%;
+    }
 }

@@ -1,4 +1,5 @@
-import createHome from './home';
+import createHomePage from './home';
+import createMenuPage from './menu';
 
 const tabNames = [
     {
@@ -49,11 +50,13 @@ function changeTab(e) {
 
     if (e.target.getAttribute('id') == 'home') {
         container.innerHTML = '';
-        createHome();
-        console.log('Heeeee');
+        createHomePage();
+        console.log('home');
     }
     if (e.target.getAttribute('id') == 'menu') {
+        console.log('menu');
         container.innerHTML = '';
+        createMenuPage();
     }
 }
 

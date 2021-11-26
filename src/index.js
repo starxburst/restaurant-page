@@ -1,5 +1,5 @@
 import createTabgroup from './tab';
-import createHome from './home';
+import createHomePage from './home';
 
 console.log(`Hello`);
 createTabgroup();
@@ -10,4 +10,4 @@ const content = document.getElementById('content');
 container.setAttribute('id', 'container');
 content.appendChild(container);
 
-createHome();
+createHomePage();
