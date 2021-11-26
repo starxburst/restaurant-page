@@ -42,7 +42,7 @@ html {
 
 
 #home-image1 {
-    width: 50%;
+    width: 50vw;
     height: auto;
     opacity: 0.4;
     border-bottom: 5px solid red;
@@ -101,6 +101,64 @@ pre {
     height: auto;
     opacity: 0.4;
     border-bottom: 5px solid red;
+}
+
+.food-name {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.food-card-name-container {
+    min-height: 10vh;
+}
+
+.food-image {
+    width: 20vw;
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+}
+
+.food-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+hr.fancy-line { 
+    border: 0; 
+    height: 1px;
+    position: relative;
+    margin: 0.5em 0;
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.89) 0%, rgba(238, 237, 237, 0) 75%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgba(0,0,0,0.1)), color-stop(75%,rgba(0,0,0,0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 247, 247, 0.1) 0%,rgba(0,0,0,0) 75%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 251, 251, 0.1) 0%,rgba(0,0,0,0) 75%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.1) 0%,rgba(243, 236, 236, 0) 75%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%,rgba(252, 252, 252, 0) 75%);
 }
 
 @media only screen and (max-width: 600px) {
