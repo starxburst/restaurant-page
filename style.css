@@ -115,7 +115,7 @@ pre {
 }
 
 .food-card-name-container {
-    min-height: 100vh;
+    min-height: 10vh;
 }
 
 .food-image {
